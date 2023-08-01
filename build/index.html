@@ -13,12 +13,14 @@
 
 <body class="min-h-screen bg-neutral-950 text-white">
     <header class="bg-black sticky top-0 z-10">
-        <section class="max-w-4xl sm:mx-auto sm:p-4 flex justify-between items-center mx-8 p-2">
-            <div class="w-6 h-0.5 sm:w-[37.5px] bg-white sm:h-[3px]">
+        <section
+            class=" sm:mx-auto sm:px-6 sm:py-2 flex justify-between items-center mx-8 p-2 md:mx-16 lg:mx-14 xl:w-auto xl:p-3 xl:mx-28">
+            <div class="w-6 h-0.5 sm:w-[30px] bg-white sm:h-[1.5px] xl:w-[37.5px] xl:h-[3px]">
             </div>
             <img src="/build/img/Rockstar_Games_Logo.png" alt="Rockstar Games"
-                class="flex w-10 h-auto justify-center items-center sm:w-16">
-            <div class="flex justify-center items-center bg-neutral-900 rounded-full w-10 h-10 sm:w-14 sm:h-14">
+                class="flex w-10 h-auto justify-center items-center sm:w-10 xl:w-16">
+            <div
+                class="flex justify-center items-center bg-neutral-900 rounded-full w-10 h-10 sm:w-10 sm:h-10 xl:w-16 xl:h-16">
                 <span class="material-symbols-outlined text-xl">
                     person
                 </span>
@@ -26,14 +28,23 @@
         </section>
     </header>
     <main>
-        <section id="hero" class="flex flex-col bg-black">
-            <img src="/build/img/Hero 1.png" alt="Hero Image" class="w-auto h-auto">
-            <div class="flex p-8 flex-col justify-start items-start">
-                <p class="text-sm">Grand theft Auto Online</p>
-                <h1 class="text-3xl my-2 font-medium">San Andreas Mercenaries Out Now</h1>
-                <button class="bg-black text-white text-xl w-full h-12 border border-solid rounded-md my-4">Watch
-                    Now</button>
-                <div class="flex flex-row">
+        <section id="hero" class="flex flex-col bg-black xl:flex-row xl:justify-center xl:items-center">
+            <img src="/build/img/Hero 1.png" alt="Hero Image" class="w-[100%] h-[100%]">
+            <div class="xl:flex xl:flex-col xl:w-auto ">
+                <div
+                    class="flex m-8 flex-col justify-start items-start sm:flex-row md:my-16 md:mx-10 md:gap-8 lg:justify-between lg:my-12 xl:flex-col xl:mx-0 xl:p-24">
+                    <div class="xl:flex xl:flex-col">
+                        <p class="text-sm lg:text-base xl:text-2xl">Grand theft Auto Online</p>
+                        <h1 class="text-3xl my-2 font-medium md:text-4xl lg:text-4xl xl:text-7xl xl:break-normal">
+                            San Andreas
+                            Mercenaries Out Now
+                        </h1>
+                    </div>
+                    <button
+                        class="bg-black text-white text-xl w-full sm:w-[220px] h-12 sm:h-14 border border-solid rounded-md my-4 md:w-72 lg:h-16 lg:w-60 lg:text-xl xl:w-96 xl:h-24 xl:text-3xl">WATCH
+                        NOW</button>
+                </div>
+                <div class="flex flex-row mx-8 mb-6 gap-8 md:mx-10 md:mb-16 lg:mb-10 xl:px-24">
                     <input type="radio" name="radio" id="radio1">
                     <input type="radio" name="radio" id="radio1">
                     <input type="radio" name="radio" id="radio1">
@@ -41,59 +52,129 @@
                 </div>
             </div>
         </section>
-        <section id="newswire" class="p-8 flex flex-col gap-8">
-            <h2 class="text-2xl font-medium">Newswire</h2>
-            <div class="bg-black w-auto h-auto flex flex-col rounded-md border-solid border-neutral-800 border-[1px]">
-                <img src="/build/img/Body 1.png" alt="Body 1" class="w-auto h-auto">
-                <div class="px-6 py-8 flex flex-col gap-2">
-                    <p class="text-xs">Red Dead Online</p>
-                    <h3 class="text-xl font-medium">Commune with Wildlife and Thrive as a Naturalist in Red Dead Online
-                    </h3>
+        <section id="newswire" class="p-8 flex flex-col gap-8 md:p-20 xl:p-36 xl:gap-12">
+            <h2 class="text-2xl font-medium md:text-3xl xl:text-6xl">Newswire</h2>
+            <div class="flex flex-col gap-8 md:grid md:grid-cols-2 lg:grid-cols-3">
+                <div
+                    class="bg-black w-auto h-auto flex flex-col rounded-md border-solid border-neutral-800 border-[1px] xl:rounded-xl">
+                    <img src="/build/img/Body 1.png" alt="Body 1" class="w-auto h-auto">
+                    <div class="px-6 py-8 flex flex-col gap-2 xl:px-12 xl:py-16 xl:gap-6">
+                        <p class="text-xs xl:text-2xl">Red Dead Online</p>
+                        <h3 class="text-xl font-medium xl:text-4xl">Commune with Wildlife and Thrive as a Naturalist in
+                            Red Dead
+                            Online
+                        </h3>
+                    </div>
                 </div>
-            </div>
-            <div class="bg-black w-auto h-auto flex flex-col rounded-md border-solid border-neutral-800 border-[1px]">
-                <img src="/build/img/Body 2.png" alt="Body 1" class="w-auto h-auto">
-                <div class="px-6 py-8 flex flex-col gap-2">
-                    <p class="text-xs">GTA Online</p>
-                    <h3 class="text-xl font-medium">Earn Double Rewards at the helm in LSA Operations
-                    </h3>
+                <div
+                    class="bg-black w-auto h-auto flex flex-col rounded-md border-solid border-neutral-800 border-[1px] xl:rounded-xl">
+                    <img src="/build/img/Body 2.png" alt="Body 1" class="w-auto h-auto">
+                    <div class="px-6 py-8 flex flex-col gap-2 xl:px-12 xl:py-16 xl:gap-6">
+                        <p class="text-xs xl:text-2xl">GTA Online</p>
+                        <h3 class="text-xl font-medium xl:text-4xl">Earn Double Rewards at the helm in LSA Operations
+                        </h3>
+                    </div>
                 </div>
-            </div>
-            <div class="bg-black w-auto h-auto flex flex-col rounded-md border-solid border-neutral-800 border-[1px]">
-                <img src="/build/img/Body 3.png" alt="Body 1" class="w-auto h-auto">
-                <div class="px-6 py-8 flex flex-col gap-2">
-                    <p class="text-xs">GTA Online</p>
-                    <h3 class="text-xl font-medium">Independance Day Celebrations Commune in GTA Online
-                    </h3>
+                <div
+                    class="bg-black w-auto h-auto flex flex-col rounded-md border-solid border-neutral-800 border-[1px] xl:rounded-xl">
+                    <img src="/build/img/Body 3.png" alt="Body 1" class="w-auto h-auto">
+                    <div class="px-6 py-8 flex flex-col gap-2 xl:px-12 xl:py-16 xl:gap-6">
+                        <p class="text-xs xl:text-2xl">GTA Online</p>
+                        <h3 class="text-xl font-medium xl:text-4xl">Independance Day Celebrations Commune in GTA Online
+                        </h3>
+                    </div>
                 </div>
-            </div>
-            <div class="bg-black w-auto h-auto flex flex-col rounded-md border-solid border-neutral-800 border-[1px]">
-                <img src="/build/img/Body 4.png" alt="Body 1" class="w-auto h-auto">
-                <div class="px-6 py-8 flex flex-col gap-2">
-                    <p class="text-xs">GTA Online</p>
-                    <h3 class="text-xl font-medium">The Bravado EVX, Available Now from Legendary Motorsport
-                    </h3>
+                <div
+                    class="bg-black w-auto h-auto flex flex-col rounded-md border-solid border-neutral-800 border-[1px] xl:rounded-xl">
+                    <img src="/build/img/Body 4.png" alt="Body 1" class="w-auto h-auto">
+                    <div class="px-6 py-8 flex flex-col gap-2 xl:px-12 xl:py-16 xl:gap-6">
+                        <p class="text-xs xl:text-2xl">GTA Online</p>
+                        <h3 class="text-xl font-medium xl:text-4xl">The Bravado EVX, Available Now from Legendary
+                            Motorsport
+                        </h3>
+                    </div>
                 </div>
-            </div>
-            <div class="bg-black w-auto h-auto flex flex-col rounded-md border-solid border-neutral-800 border-[1px]">
-                <img src="/build/img/Body 5.png" alt="Body 1" class="w-auto h-auto">
-                <div class="px-6 py-8 flex flex-col gap-2">
-                    <p class="text-xs">GTA Online</p>
-                    <h3 class="text-xl font-medium">Become a Charter Member of The Vinewood Club and Get the New
-                        MaibatsuCiti with GTA+
-                    </h3>
+                <div
+                    class="bg-black w-auto h-auto flex flex-col rounded-md border-solid border-neutral-800 border-[1px] xl:rounded-xl">
+                    <img src="/build/img/Body 5.png" alt="Body 1" class="w-auto h-auto">
+                    <div class="px-6 py-8 flex flex-col gap-2 xl:px-12 xl:py-16 xl:gap-6">
+                        <p class="text-xs xl:text-2xl">GTA Online</p>
+                        <h3 class="text-xl font-medium xl:text-4xl">Become a Charter Member of The Vinewood Club and Get
+                            the New
+                            MaibatsuCiti with GTA+
+                        </h3>
+                    </div>
                 </div>
-            </div>
-            <div class="bg-black w-auto h-auto flex flex-col rounded-md border-solid border-neutral-800 border-[1px]">
-                <img src="/build/img/Body 6.png" alt="Body 1" class="w-auto h-auto">
-                <div class="px-6 py-8 flex flex-col gap-2">
-                    <p class="text-xs">GTA Online</p>
-                    <h3 class="text-xl font-medium">GTA Online: San Andreas Mercenaries Now Available
-                    </h3>
+                <div
+                    class="bg-black w-auto h-auto flex flex-col rounded-md border-solid border-neutral-800 border-[1px] xl:rounded-xl">
+                    <img src="/build/img/Body 6.png" alt="Body 1" class="w-auto h-auto">
+                    <div class="px-6 py-8 flex flex-col gap-2 xl:px-12 xl:py-16 xl:gap-6">
+                        <p class="text-xs xl:text-2xl">GTA Online</p>
+                        <h3 class="text-xl font-medium xl:text-4xl">GTA Online: San Andreas Mercenaries Now Available
+                        </h3>
+                    </div>
                 </div>
             </div>
         </section>
+        <div class="flex justify-center items-center mx-auto">
+            <a href="viewmore.html" target="_blank"
+                class="text-neutral-400 underline decoration-4 decoration-[#FCAF17] hover:bg-[#FCAF17] hover:text-black hover:w-24 hover:h-6 hover:text-center hover:rounded hover:ease-in-out mb-6">View
+                More</a>
+        </div>
+        <section id="featured" class="p-8 flex flex-col gap-8 md:p-20 xl:mx-auto xl:gap-36 xl:p-36">
+            <h2 class="text-2xl font-medium md:text-3xl xl:text-6xl">Featured Games</h2>
+            <div class="grid grid-cols-2 gap-6 lg:grid-cols-4 xl:flex xl:justify-between xl:items-center">
+                <img src="/build/img/Bend 1.png" alt="GTA 5" class="rounded xl:w-[100%]">
+                <img src="/build/img/Bend 2.png" alt="GTA Online" class="rounded xl:w-[100%]">
+                <img src="/build/img/Bend 3.png" alt="RDR 2" class="rounded xl:w-[100%]">
+                <img src="/build/img/Bend 4.png" alt="RDR Online" class="rounded xl:w-[100%]">
+            </div>
+        </section>
+        <div class="flex justify-center items-center mx-auto">
+            <a href="viewmore.html" target="_blank"
+                class="text-neutral-400 underline decoration-4 decoration-[#FCAF17] hover:bg-[#FCAF17] hover:text-black hover:w-24 hover:h-6 hover:text-center hover:rounded hover:ease-in-out mb-8">View
+                More</a>
+        </div>
     </main>
+    <footer class="bg-black py-14 px-8 md:px-20 md:py-16 xl:p-36 xl:flex xl:flex-col xl:gap-16">
+        <div class="flex flex-col gap-4 md:flex-row xl:gap-8">
+            <a href="contact.html" target="_blank"
+                class="text-neutral-300 hover:text-[#FCAF17] md:text-lg xl:text-3xl">Contact</a>
+            <a href="careers.html" target="_blank"
+                class="text-neutral-300 hover:text-[#FCAF17] md:text-lg xl:text-3xl">Careers</a>
+            <a href="subscribe.html" target="_blank"
+                class="text-neutral-300 hover:text-[#FCAF17] md:text-lg xl:text-3xl">Subscribe
+            </a>
+        </div>
+        <div class="flex flex-col gap-4 my-8 md:my-20 lg:flex-row">
+            <a href="corporate.html" target="_blank"
+                class="hover:text-[#FCAF17] text-[10px] font-light text-neutral-400 lg:text-sm xl:text-xl">Corporate</a>
+            <a href="privacy.html" target="_blank"
+                class="hover:text-[#FCAF17] text-[10px] font-light text-neutral-400 lg:text-sm xl:text-xl">Privacy</a>
+            <a href="cookies.html" target="_blank"
+                class="hover:text-[#FCAF17] text-[10px] font-light text-neutral-400 lg:text-sm xl:text-xl">Cookie
+                Settings</a>
+            <a href="cookies.html" target="_blank"
+                class="hover:text-[#FCAF17] text-[10px] font-light text-neutral-400 lg:text-sm xl:text-xl">Cookie
+                Policy</a>
+            <a href="legal.html" target="_blank"
+                class="hover:text-[#FCAF17] text-[10px] font-light text-neutral-400 lg:text-sm xl:text-xl">Legal</a>
+            <a href="donotsell.html" target="_blank"
+                class="hover:text-[#FCAF17] text-[10px] font-light text-neutral-400 lg:text-sm xl:text-xl">Do
+                Not Sell My
+                Personal Information</a>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-5 mt-24 md:flex-row md:justify-between">
+            <p class="text-xs md:text-sm xl:text-2xl">Rockstar Games</p>
+            <div class="flex flex-row gap-4 xl:gap-8">
+                <p class="text-xs md:text-sm xl:text-2xl">New York</p>
+                <p class="text-xs md:text-sm xl:text-2xl">London</p>
+                <p class="text-xs md:text-sm xl:text-2xl">Paris</p>
+                <p class="text-xs md:text-sm xl:text-2xl">Bogotá</p>
+            </div>
+            <p class="text-xs md:text-sm xl:text-2xl">MCMXCVII</p>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -5,5 +5,5 @@
 @layer utilities {
     .toggle-btn {
         @apply [&>div::before]:bg-transparent [&>div::after]:bg-transparent
-    }
+   }
 }

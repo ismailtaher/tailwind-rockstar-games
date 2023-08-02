@@ -9,14 +9,31 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="js/main.js" defer></script>
 </head>
 
 <body class="min-h-screen bg-neutral-950 text-white">
     <header class="bg-black sticky top-0 z-10">
         <section
-            class=" sm:mx-auto sm:px-6 sm:py-2 flex justify-between items-center mx-8 p-2 md:mx-16 lg:mx-14 xl:w-auto xl:p-3 xl:mx-28">
-            <div class="w-6 h-0.5 sm:w-[30px] bg-white sm:h-[1.5px] xl:w-[37.5px] xl:h-[3px]">
-            </div>
+            class=" sm:mx-auto sm:px-6 sm:py-2 flex justify-between items-center mx-8 p-2 md:mx-16 lg:mx-14 xl:w-auto xl:p-3 xl:mx-28 relative">
+            <button id="hamburger-button" class="relative w-8 h-8">
+                <div
+                    class="w-6 h-0.5 sm:w-[30px] bg-white sm:h-[1.5px] xl:w-[37.5px] xl:h-[3px] absolute transition-all duration-500 before:content-[''] before:bg-white before:w-6 before:h-0.5 before:absolute before:-translate-x-3 before:-translate-y-2 before:transition-all before:duration-500 after:content-[''] after:bg-white after:w-6 after:h-0.5 after:absolute after:transition-all after:duration-500 after:-translate-x-3 after:translate-y-2">
+                </div>
+            </button>
+            <nav id="nav-menu"
+                class="absolute bg-neutral-950 top-14 -left-8 sm:left-0 md:-left-16 xl:top-20 xl:-left-28 min-h-screen w-screen md:w-[75%] flex-col justify-start gap-6 md:gap-8 xl:gap-16 px-8 py-8 md:px-14 xl:px-24 xl:py-16 origin-left animate-open-menu hidden">
+                <input type="text" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Search Rockstar Games" name="search"
+                    class="bg-neutral-800 h-12 md:h-14 xl:h-24 xl:text-3xl">
+                <a href="#newswire" class="text-2xl md:text-3xl xl:text-5xl hover:text-[#FCAF17]">Newswire</a>
+                <a href="#featured" class="text-2xl md:text-3xl xl:text-5xl hover:text-[#FCAF17]">Games</a>
+                <a href="videos.html" class="text-2xl md:text-3xl xl:text-5xl hover:text-[#FCAF17]">Videos</a>
+                <a href="Downloads.html" class="text-2xl md:text-3xl xl:text-5xl hover:text-[#FCAF17]">Downloads</a>
+                <a href="Support.html" class="text-2xl md:text-3xl xl:text-5xl hover:text-[#FCAF17]">Support</a>
+                <a href="socialclub.html" class="text-2xl md:text-3xl xl:text-5xl hover:text-[#FCAF17]">Social Club</a>
+                <a href="Launcher.html" class="text-2xl md:text-3xl xl:text-5xl hover:text-[#FCAF17]">Launcher</a>
+                <a href="store.html" class="text-2xl md:text-3xl xl:text-5xl hover:text-[#FCAF17]">Store</a>
+            </nav>
             <img src="/build/img/Rockstar_Games_Logo.png" alt="Rockstar Games"
                 class="flex w-10 h-auto justify-center items-center sm:w-10 xl:w-16">
             <div
@@ -30,10 +47,10 @@
     <main>
         <section id="hero" class="flex flex-col bg-black xl:flex-row xl:justify-center xl:items-center">
             <img src="/build/img/Hero 1.png" alt="Hero Image" class="w-[100%] h-[100%]">
-            <div class="xl:flex xl:flex-col xl:w-auto ">
+            <div class="xl:flex xl:flex-col xl:px-24">
                 <div
-                    class="flex m-8 flex-col justify-start items-start sm:flex-row md:my-16 md:mx-10 md:gap-8 lg:justify-between lg:my-12 xl:flex-col xl:mx-0 xl:p-24">
-                    <div class="xl:flex xl:flex-col">
+                    class="flex m-8 flex-col justify-start items-start sm:flex-row md:my-16 md:mx-10 md:gap-8 lg:justify-between lg:my-12 xl:flex-col xl:mx-0 xl:p-0">
+                    <div class="xl:flex xl:flex-col xl:justify-between xl:flex-grow">
                         <p class="text-sm lg:text-base xl:text-2xl">Grand theft Auto Online</p>
                         <h1 class="text-3xl my-2 font-medium md:text-4xl lg:text-4xl xl:text-7xl xl:break-normal">
                             San Andreas
@@ -54,7 +71,7 @@
         </section>
         <section id="newswire" class="p-8 flex flex-col gap-8 md:p-20 xl:p-36 xl:gap-12">
             <h2 class="text-2xl font-medium md:text-3xl xl:text-6xl">Newswire</h2>
-            <div class="flex flex-col gap-8 md:grid md:grid-cols-2 lg:grid-cols-3">
+            <div class="flex flex-col gap-8 md:grid md:grid-cols-2 lg:grid-cols-3 xl:gap-12">
                 <div
                     class="bg-black w-auto h-auto flex flex-col rounded-md border-solid border-neutral-800 border-[1px] xl:rounded-xl">
                     <img src="/build/img/Body 1.png" alt="Body 1" class="w-auto h-auto">
@@ -118,10 +135,10 @@
         </section>
         <div class="flex justify-center items-center mx-auto">
             <a href="viewmore.html" target="_blank"
-                class="text-neutral-400 underline decoration-4 decoration-[#FCAF17] hover:bg-[#FCAF17] hover:text-black hover:w-24 hover:h-6 hover:text-center hover:rounded hover:ease-in-out mb-6">View
+                class="text-neutral-400 underline decoration-4 decoration-[#FCAF17] hover:bg-[#FCAF17] hover:text-black hover:w-24 hover:h-6 hover:text-center hover:rounded hover:ease-in-out mb-6 xl:text-4xl xl:mb-28 xl:whitespace-nowrap xl:hover:w-48 xl:hover:h-12">View
                 More</a>
         </div>
-        <section id="featured" class="p-8 flex flex-col gap-8 md:p-20 xl:mx-auto xl:gap-36 xl:p-36">
+        <section id="featured" class="p-8 flex flex-col gap-8 md:p-20 xl:mx-auto xl:p-36 xl:gap-12">
             <h2 class="text-2xl font-medium md:text-3xl xl:text-6xl">Featured Games</h2>
             <div class="grid grid-cols-2 gap-6 lg:grid-cols-4 xl:flex xl:justify-between xl:items-center">
                 <img src="/build/img/Bend 1.png" alt="GTA 5" class="rounded xl:w-[100%]">
@@ -132,7 +149,7 @@
         </section>
         <div class="flex justify-center items-center mx-auto">
             <a href="viewmore.html" target="_blank"
-                class="text-neutral-400 underline decoration-4 decoration-[#FCAF17] hover:bg-[#FCAF17] hover:text-black hover:w-24 hover:h-6 hover:text-center hover:rounded hover:ease-in-out mb-8">View
+                class="text-neutral-400 underline decoration-4 decoration-[#FCAF17] hover:bg-[#FCAF17] hover:text-black hover:w-24 hover:h-6 hover:text-center hover:rounded hover:ease-in-out mb-8 xl:text-4xl xl:mb-28 xl:whitespace-nowrap xl:hover:w-48 xl:hover:h-12">View
                 More</a>
         </div>
     </main>

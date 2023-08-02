@@ -4,6 +4,6 @@
 
 @layer utilities {
     .toggle-btn {
-        @apply [&>div::before]:bg-transparent [&>div::after]:bg-transparent
+        @apply [&>div::before]:translate-y-0 [&>div::after]:translate-y-0
    }
 }
